@@ -20,7 +20,7 @@ hist = sym_data.history(period="1mo")  # 1 year of data
 print(hist)
 
 # Plot the closing prices
-if 1:
+if 0:
    plt.figure(figsize=(10, 6))
    plt.plot(hist['Close'])
    plt.title('NVIDIA Stock Closing Prices - Last 1 Month')
