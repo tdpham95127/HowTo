@@ -1,21 +1,39 @@
 
-#Setup Ubuntu in Windows
+####################
+###Setup Ubuntu in Windows
+####################
 # See https://learn.microsoft.com/en-us/windows/wsl/install
 # open cmd
 wsl --install  
+# setup password
+# Windows start Menu --> Ubuntu
 
 
+####################
+###Ubuntu
+####################
 # if cant ping google.com github.com
 sudo nano /etc/resolv.conf
-#add 2 lines below to use Google's DNS Servers
+#add lines below to use Google's DNS Servers
+generateResolvConf = false
 nameserver 8.8.8.8
 nameserver 8.8.4.4
+#save and exit (`^O then ^X)
+
 
 # ping github.com gain to check connectiviy to github.com
 
+#install pip
+sudo apt-get install python3.10
+sudo apt-get install python3-pip
+
+#install yfinance Python's package or any other package
+pip install yfinance
+pip install alpha_vantage
+
 # install Git
 sudo apt-get update
-sudo install git
+sudo apt install git
 
 #Setup SSH keys GitHub
 # See instructions: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
@@ -24,5 +42,18 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 
 # See Section "Adding your SSH key to the ssh-agent"
 
+####Xterm
+# add 2 lines below in ~/.Xresources
 
+XTerm*faceName: Monospace
+XTerm*faceSize: 14
+#Apply the change, run the following command
+xrdb -merge ~/.Xresources
+##############################
+
+#Verilog 
+sudo apt-get install iverilog
+#Verilator
+sudo apt-get install verilator
+                                                                      
 
