@@ -1,0 +1,96 @@
+1, Strong Working knowlege of SystemVerilog
+    casex, casez ...
+    assign
+    always_comb 
+    always 
+    logic vs reg 
+    assertion
+    UVM
+
+2, back-end
+    DFT   
+    STA
+    synthesis
+    LEC
+    ECO
+    CDC
+    RDC
+    
+3, Power
+    Power reduction technique
+	
+    Power analysis
+
+
+4, Logic design
+    arbiter
+    scheduling
+    NOC, ....
+    bus protocol
+    interconnect networks and or cache
+    hand_shake
+  
+    micro-architecture ??? what does it mean?
+    fifo design 
+     
+    some logic design problems:
+	*recursive 
+        *fibonacci sequence
+        *tracking the 2nd largest		
+    
+
+5, Computer 
+    Look-ahead adder
+    Booth multiplier
+    CPU design
+       Cache
+       Instruction fetch
+       Instruction decode
+       memory access/ Branch completion
+       Write back
+       Structural: some combination of instructions cannot be accommodate because of resource conflicts
+              * Data -- occurs when 
+                        Read after Write
+                        Write after Write
+                        Write after Read
+              * Control -- Branch may or may not jump to new program counter 
+      
+    memory system/ Cache
+      * Register
+      * Cache
+          * L1D, L1I -- per core data and instruction
+          * L2(L3) -- mid-level
+          * LLC -- fronts DRAM
+      * Main Memory 
+          * DRAM 
+          * Virtual memory
+              divides physical address into blocks and allocates them to difference processes. Inherent to such an approach must be a protection scheme that restricts a process to the blocks belongs only to it.
+      * Other
+          * Large scale-out systems
+          * Networking
+      * Cache Coherence 
+          * MESI: Exclusive, Share, Invalid, Modified
+          * MOSI: 
+
+
+
+6, DSP
+   CDR
+   CTLE/DFE/FFE adaptation loops
+       * LMS ??
+       * mountain climbing 
+   db concept
+
+7: programming
+   Perl, Python
+   C/C++ ??
+
+8, Digital system
+   Signal integrity
+   Interference vs  Cross-talk
+   Performance analysis How ?
+
+9, Protocols
+     PCIE, UCIe, CXL, AXI, CHI
+  
+
