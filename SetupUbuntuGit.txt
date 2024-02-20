@@ -70,3 +70,10 @@ sudo apt install google-chrome-stable
 
 #gzip
 sudo apt-get install gzip
+
+#acrobat reader
+#sudo apt install flatpak
+#flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub/
+sudo apt install evince
+
+
